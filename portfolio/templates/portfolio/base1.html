@@ -1,9 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -42,6 +40,9 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#certification">Certificates</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -68,7 +69,7 @@
 
       <!-- Masthead Subheading -->
       <p class="masthead-subheading font-weight-light mb-0">
-        3 years of Full Stack Web Development experience in Analysis, Design, Development,
+        Experience in Full Stack Web Development, Design and Analysis
       and implementation of Business Applications using Python and Django Web framework.
       </p>
 
@@ -95,11 +96,6 @@
       <div class="row">
 
            {% block content %}{% endblock %}
-
-
-
-
-
 
       </div>
       <!-- /.row -->
@@ -156,6 +152,8 @@
       </div>
 
   </section>
+
+
 
   <!-- Contact Section -->
   <section class="page-section" id="contact">
@@ -216,6 +214,41 @@
       </div>
 
     </div>
+  </section>
+
+   <!-- About Certification -->
+  <section class="page-section bg-primary text-white mb-0" id="certification">
+    <div class="container">
+
+      <!-- About Certification Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Certificates</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Certification Content -->
+      <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <a href="{% static 'portfolio/Certificate1.jpg' %}" target="_blank">
+            <img src="{% static 'portfolio/cert1.JPG' %}" class="img-fluid mb-2">
+          </a>
+        </div>
+       <div class="col-lg-4 col-md-6">
+          <a href="{% static 'portfolio/Certificate2.jpg' %}" target="_blank">
+            <img src="{% static 'portfolio/cert2.JPG' %}" class="img-fluid mb-2">
+          </a>
+        </div>
+      <!-- About Certification Button -->
+    </div>
+      </div>
+
   </section>
 
   <!-- Footer -->
